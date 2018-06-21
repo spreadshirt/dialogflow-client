@@ -10,17 +10,29 @@ public class OriginalDetectIntentRequest {
      */
     @JsonProperty
     private String source;
-
+    @JsonProperty
+    private String version;
     /***
      * Optional. This field is set to the value of QueryParameters.payload field passed in the request.
      */
-    private JsonNode payload;
+    @JsonProperty
+    private GoogleOriginalDetectIntentRequestPayload payload;
 
     public String getSource() {
         return source;
     }
 
-    public JsonNode getPayload() {
+    public GoogleOriginalDetectIntentRequestPayload getPayload() {
         return payload;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("OriginalDetectIntentRequest{");
+        sb.append("source='").append(source).append('\'');
+        sb.append(", version='").append(version).append('\'');
+        sb.append(", payload=").append(payload);
+        sb.append('}');
+        return sb.toString();
     }
 }

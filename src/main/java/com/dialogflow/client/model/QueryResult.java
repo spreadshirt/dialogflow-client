@@ -69,6 +69,11 @@ public class QueryResult {
 //
 //    private List<Message> fulfillmentMessages;
 
+    @JsonProperty
+    private List<Object> fulfillmentMessages;
+
+    @JsonProperty
+    private Object diagnosticInfo;
     /***
      * If the query was fulfilled by a webhook call, this field is set to the value of the source field returned in the webhook response.
      */
@@ -135,6 +140,24 @@ public class QueryResult {
 
     public Float getIntentDetectionConfidence() {
         return intentDetectionConfidence;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("QueryResult{");
+        sb.append("queryText='").append(queryText).append('\'');
+        sb.append(", languageCode='").append(languageCode).append('\'');
+        sb.append(", speechRecognitionConfidence=").append(speechRecognitionConfidence);
+        sb.append(", action='").append(action).append('\'');
+        sb.append(", parameters=").append(parameters);
+        sb.append(", allRequiredParamsPresent=").append(allRequiredParamsPresent);
+        sb.append(", fulfillmentText='").append(fulfillmentText).append('\'');
+        sb.append(", webhookSource='").append(webhookSource).append('\'');
+        sb.append(", outputContexts=").append(outputContexts);
+        sb.append(", intent=").append(intent);
+        sb.append(", intentDetectionConfidence=").append(intentDetectionConfidence);
+        sb.append('}');
+        return sb.toString();
     }
 
     //endregion

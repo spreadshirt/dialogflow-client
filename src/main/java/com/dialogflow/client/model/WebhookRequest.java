@@ -47,4 +47,15 @@ public class WebhookRequest {
     public OriginalDetectIntentRequest getOriginalDetectIntentRequest() {
         return originalDetectIntentRequest;
     }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("WebhookRequest{");
+        sb.append("session='").append(session).append('\'');
+        sb.append(", responseId=").append(responseId);
+        sb.append(", queryResult=").append(queryResult);
+        sb.append(", originalDetectIntentRequest=").append(originalDetectIntentRequest);
+        sb.append('}');
+        return sb.toString();
+    }
 }
