@@ -1,8 +1,7 @@
 package com.dialogflow.client.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-import java.util.List;
+import java.util.Map;
 
 public class Context {
 
@@ -22,7 +21,7 @@ public class Context {
      * Optional. The collection of parameters associated with this context. Refer to this doc for syntax.
      */
     @JsonProperty
-    private List<Parameter> parameters;
+    private Map<String, String> parameters;
 
     public String getName() {
         return name;
@@ -32,7 +31,4 @@ public class Context {
         return lifespanCount;
     }
 
-    public List<Parameter> getParameters() {
-        return parameters;
-    }
 }

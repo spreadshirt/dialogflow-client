@@ -1,0 +1,130 @@
+{
+  "responseId": "3e974582-ebd5-4710-8c20-d1c81d722f34",
+  "queryResult": {
+    "queryText": "Zufallsprodukt",
+    "action": "randomShirt.show",
+    "parameters": {
+      "mpCategory": "",
+      "department": "",
+      "time": "",
+      "synArtikel": ""
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "Bar",
+    "fulfillmentMessages": [{
+      "text": {
+        "text": ["payload?"]
+      }
+    }],
+    "outputContexts": [{
+      "name": "projects/spreadshirt-6f36b/agent/sessions/1529574565287/contexts/actions_capability_screen_output",
+      "parameters": {
+        "synArtikel.original": "",
+        "time.original": "",
+        "mpCategory": "",
+        "time": "",
+        "department.original": "",
+        "department": "",
+        "synArtikel": "",
+        "mpCategory.original": ""
+      }
+    }, {
+      "name": "projects/spreadshirt-6f36b/agent/sessions/1529574565287/contexts/actions_capability_audio_output",
+      "parameters": {
+        "synArtikel.original": "",
+        "time.original": "",
+        "mpCategory": "",
+        "time": "",
+        "department.original": "",
+        "department": "",
+        "synArtikel": "",
+        "mpCategory.original": ""
+      }
+    }, {
+      "name": "projects/spreadshirt-6f36b/agent/sessions/1529574565287/contexts/google_assistant_input_type_keyboard",
+      "parameters": {
+        "synArtikel.original": "",
+        "time.original": "",
+        "mpCategory": "",
+        "time": "",
+        "department.original": "",
+        "department": "",
+        "synArtikel": "",
+        "mpCategory.original": ""
+      }
+    }, {
+      "name": "projects/spreadshirt-6f36b/agent/sessions/1529574565287/contexts/actions_capability_media_response_audio",
+      "parameters": {
+        "synArtikel.original": "",
+        "time.original": "",
+        "mpCategory": "",
+        "time": "",
+        "department.original": "",
+        "department": "",
+        "synArtikel": "",
+        "mpCategory.original": ""
+      }
+    }, {
+      "name": "projects/spreadshirt-6f36b/agent/sessions/1529574565287/contexts/actions_capability_web_browser",
+      "parameters": {
+        "synArtikel.original": "",
+        "time.original": "",
+        "mpCategory": "",
+        "time": "",
+        "department.original": "",
+        "department": "",
+        "synArtikel": "",
+        "mpCategory.original": ""
+      }
+    }],
+    "intent": {
+      "name": "projects/spreadshirt-6f36b/agent/intents/d2016e6b-4787-4cb3-a77f-6faf6e1522b6",
+      "displayName": "randomShirt"
+    },
+    "intentDetectionConfidence": 1.0,
+    "diagnosticInfo": {
+    },
+    "languageCode": "de"
+  },
+  "originalDetectIntentRequest": {
+    "source": "google",
+    "version": "2",
+    "payload": {
+      "isInSandbox": true,
+      "surface": {
+        "capabilities": [{
+          "name": "actions.capability.WEB_BROWSER"
+        }, {
+          "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+        }, {
+          "name": "actions.capability.SCREEN_OUTPUT"
+        }, {
+          "name": "actions.capability.AUDIO_OUTPUT"
+        }]
+      },
+      "inputs": [{
+        "rawInputs": [{
+          "query": "Zufallsprodukt",
+          "inputType": "KEYBOARD"
+        }],
+        "arguments": [{
+          "rawText": "Zufallsprodukt",
+          "textValue": "Zufallsprodukt",
+          "name": "text"
+        }],
+        "intent": "actions.intent.TEXT"
+      }],
+      "user": {
+        "lastSeen": "2018-06-21T09:05:30Z",
+        "locale": "de-DE",
+        "userId": "ABwppHHiwjFQooeCfbToZivFFod8e29y38gqO9cOONf1TZlnEj75l6YjKt6mgx6mToqEwECn6JCNokPvQmdQEc4"
+      },
+      "conversation": {
+        "conversationId": "1529574565287",
+        "type": "ACTIVE",
+        "conversationToken": "[]"
+      }
+    }
+  },
+  "session": "projects/spreadshirt-6f36b/agent/sessions/1529574565287"
+}

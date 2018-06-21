@@ -13,7 +13,7 @@ public class GoogleWebhookTest {
         ObjectMapper mapper = new ObjectMapper();
 
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
-        try (InputStream stream = getClass().getClassLoader().getResourceAsStream("GoogleWebhookRequest.json")) {
+        try (InputStream stream = getClass().getClassLoader().getResourceAsStream("WebhookRequest.json")) {
             WebhookRequest webhookRequest = mapper.readValue(stream, WebhookRequest.class);
             mapper.writeValue(System.out, webhookRequest);
         }

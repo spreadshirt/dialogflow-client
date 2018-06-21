@@ -1,7 +1,5 @@
 package com.dialogflow.client.model;
 
-import java.util.List;
-
 public class GoogleRequestConversation {
 
     private String conversationId;

@@ -1,7 +1,10 @@
 package com.dialogflow.client.model;
 
 
-import com.dialogflow.client.model.response.*;
+import com.dialogflow.client.model.response.Response;
+import com.dialogflow.client.model.response.SimpleResponse;
+import com.dialogflow.client.model.response.SimpleTextResponse;
+import com.dialogflow.client.model.response.Suggestion;
 import com.dialogflow.client.model.response.card.BasicCard;
 
 import java.util.Arrays;
