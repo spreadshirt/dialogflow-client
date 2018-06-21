@@ -32,8 +32,12 @@ public class WebhookRequest {
     @JsonProperty
     private OriginalDetectIntentRequest originalDetectIntentRequest;
 
-    public String getSession() {
-        return session;
+    private Session _session;
+    public Session getSession() {
+        if(_session==null){
+            _session = new Session(session);
+        }
+        return _session;
     }
 
     public UUID getResponseId() {
