@@ -52,6 +52,16 @@ public class WebhookRequest {
         return originalDetectIntentRequest;
     }
 
+    public String getLocale() {
+
+        OriginalDetectIntentRequest intentRequest = this.originalDetectIntentRequest;
+        if (intentRequest != null && intentRequest.getPayload() != null && intentRequest.getPayload().getUser() != null) {
+            return intentRequest.getPayload().getUser().getLocale();
+        }
+
+        return null;
+    }
+
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("WebhookRequest{");
