@@ -60,6 +60,10 @@ public class BasicCard implements Response {
         return withImage(new Image(url, accessibilityText));
     }
 
+    public BasicCard withImage(String url, String accessibilityText, ImageDisplayOptions imageDisplayOptions) {
+        return withImage(new Image(url, accessibilityText), imageDisplayOptions);
+    }
+
     public BasicCard withButton(Button button) {
 
         if (this.buttons == null) {
