@@ -1,7 +1,6 @@
 package com.dialogflow.client.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.JsonNode;
 
 public class OriginalDetectIntentRequest {
 

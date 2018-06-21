@@ -60,15 +60,6 @@ public class QueryResult {
     @JsonProperty
     private String fulfillmentText;
 
-//
-//    /***
-//     * The collection of rich messages to present to the user.
-//     */
-//    @JsonProperty
-//    @JsonDeserialize(using = CustomerDesierualier.class)
-//
-//    private List<Message> fulfillmentMessages;
-
     @JsonProperty
     private List<Object> fulfillmentMessages;
 
