@@ -14,6 +14,8 @@
 
         <junit.jupiter.version>5.2.0</junit.jupiter.version>
         <junit.platform.version>1.2.0</junit.platform.version>
+
+        <sprd.repository>https://repo.sprd.net</sprd.repository>
     </properties>
 
     <dependencies>
@@ -78,5 +80,42 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>sprd-libs-releases</id>
+            <url>${sprd.repository}/repository/libs-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>sprd-libs-snapshots</id>
+            <url>${sprd.repository}/repository/libs-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>nexus</id>
+            <name>sprd.net Releases Repository</name>
+            <url>${sprd.repository}/groups/public</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>snapshots</id>
+            <name>sprd.net Snapshots Repository</name>
+            <url>${sprd.repository}/groups/public</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+    </repositories>
 
 </project>
